@@ -1,3 +1,4 @@
+// adding text to test git and kiln. 
 // Your code here.function countChar(word, singleChar) {
 	var wordString = String(word);
 	var numberSingleChars = 0;
