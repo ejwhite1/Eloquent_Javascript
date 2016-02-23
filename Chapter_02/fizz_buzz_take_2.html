@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+
+    <title>Find the multiple of 7</title>
+</head>
+
+<body id="mainBody">
+    
+Fizz Buzz example from Eloquent JS Chapter 2 exercises. This is code written after my re-read of Chapter 2. Check the output in the dev tools.
+    
+<script>
+
+
+// Fizz Buzz example from Eloquent JS Chapter 2 exercises
+
+for (var k = 1; k < 101 ; k++) {
+
+	var remainder = 0;
+	var fizz = "fizz";
+	var buzz = "buzz";
+	var fizzBuzz = "FizzBuzz";
+	var output;
+		
+	if (k %5 == 0 && k % 3 == 0) output = fizzBuzz;	
+	else if (k % 3 == 0) output = fizz;
+	else if (k %5 == 0) output = buzz;
+	else output = k;
+	
+	console.log(output);
+	
+}	
+
+</script>
+
+
+  
+</body>
+</html>

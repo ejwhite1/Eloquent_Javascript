@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+
+    <title>Find the multiple of 7</title>
+</head>
+
+<body id="mainBody">
+    
+This is the chess board example from Eloquent JS Chapter 2 exercises. This is my crack at the code after rereading chapter 2. See the results in the dev tools.
+    
+<script>
+
+
+// Chess board example from Eloquent JS Chapter 2 exercises
+
+var grid = "";
+size = 20;
+
+for (var a = 0; a < size ; a++) {
+	
+		for (var b = 0; b < size ; b++) {
+			
+			if (a % 2 != 0) { 			
+				if (b % 2 == 0) grid = grid + "#";
+				else grid = grid + " ";
+			} else 
+				if (b % 2 == 0) grid = grid + " ";
+				else grid = grid + "#";
+			
+		}	
+		
+		grid = grid + "\n";
+	
+}
+
+console.log(grid);
+
+
+
+/* this was the code I used the first time trough this exercise. 
+upon further review I don't believe this is correct. the 2nd try code is similar but correct.
+this prints out one line at a time where v2 prints out one string across multiple lines, using line breaks, per the instructions in the exercise
+
+
+var board = "";
+size = 20;
+
+for (var rows = 0; rows <= size; rows += 1) {
+    board = "";
+    for (var columns = 0; columns <= size; columns += 1) {
+        if (rows % 2 != 0) 
+            if (columns % 2 != 0) 
+                board = "#" + board;
+            else
+                board = " " + board;
+        else 
+            if (columns % 2 != 0) 
+                board = " " + board;
+            else
+                board = "#" + board;
+    }        
+    console.log(board);
+}
+*/
+
+</script>
+
+
+  
+</body>
+</html>

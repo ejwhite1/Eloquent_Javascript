@@ -1,4 +1,7 @@
 // adding line to test pulling from kiln. ejw
+
+// upon further review I don't believe this is correct. the 2nd try code is similar but correct.
+// this prints out one line at a time where v2 prints out one string across multiple lines, using line breaks, per the instructions in the exercise
 var board = "";
 size = 4;
 
