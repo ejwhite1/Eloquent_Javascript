@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+
+    <title>Find the multiple of 7</title>
+</head>
+
+<body id="mainBody">
+    
+The number we are looking for is     
+    
+<script>
+
+//not setting an upper bound on the value of i by leaving the 2nd part of the loop condition blank
+for (var i = 7;  ; i+=7) {
+
+	var remainders = [(i % 2), (i % 3), (i % 4), (i % 5)];
+	
+	if (( i % 2 == 1) && ( i % 3 == 1) && ( i % 4 == 1) && ( i % 5 == 1)) 		{
+	
+	console.log(i, remainders[0], remainders[1], remainders[2], remainders[3], remainders[4]);
+	
+	break;
+	
+	}
+}	
+
+
+
+document.write(i);
+
+</script>
+
+
+  
+</body>
+</html>
